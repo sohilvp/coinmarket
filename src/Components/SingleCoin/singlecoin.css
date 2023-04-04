@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+.single-container {
+  display: flex;
+  width: 260px;
+  height: 170px;
+  overflow-x: hidden;
+  border-radius: 10px;
+  
+  background: var(--bg-single);
+  transition: 0.3s all ease-out;
+  font-family: "Abel", sans-serif;
+  position: relative;
+  color: var(--txt-white);
+}
+.image-section {
+  padding-left: 1em;
+  padding-top: 1em;
+  width: 40%;
+}
+.image-section img {
+  border-radius: 50%;
+}
+
+.text-container {
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+}
+
+.ranks {
+  position: absolute;
+  z-index: 2;
+  right: -1em;
+  bottom: 0em;
+  font-size: 10rem;
+  font-weight: 900;
+  color: var(--cc-rank);
+  font-family: "Aldrich", sans-serif;
+  transition: 0.3s all ease-out;
+}
+.single-container:hover {
+  background: var(--bg-card);
+  cursor: pointer;
+}
+
+.single-container:hover > div > div {
+  right: 0em;
+  color: var(--txt-white);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1000px) {
+  .single-container {
+    width: 210px;
+    height: 135px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .single-container {
+    width: 300px;
+    gap: 0;
+  }
+  .image-section img {
+    width: 80px;
+  }
+  .ranks,
+  .ranks:hover {
+    display: none;
+  }
+}

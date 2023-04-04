@@ -1,0 +1,159 @@
+.banner {
+  color: var(--txt-banner);
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.banner p {
+  color: var(--txt-white);
+  font-size: 1.2rem;
+}
+
+.banner img {
+  display: inline-block;
+  max-width: 100%;
+  width: 600px;
+}
+h1 {
+  font-size: 4rem;
+}
+.text-center {
+  padding-top: 6em;
+  padding-left: 3.5em;
+  overflow: hidden;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1250px) {
+  .text-center {
+    padding-top: 8em;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .banner img {
+    width: 600px;
+  }
+
+  .text-center {
+    padding-top: 8em;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .banner img {
+    width: 550px;
+  }
+
+  .text-center {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .banner img {
+    width: 500px;
+    padding-left: 2em;
+  }
+
+  .text-center {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner img {
+    margin: 0;
+    padding: 0;
+    width: 500px;
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  .text-center {
+    margin: 0;
+    padding: 0;
+    padding-top: 3em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner img {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner img {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  .banner p {
+    font-size: 0.9rem;
+    padding: 0.5em 2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner img {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+  .banner p {
+    font-size: 0.9rem;
+    padding: 0.5em 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .text-center {
+    padding: 0.5em 1.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner p {
+    padding: 0.5em 2em;
+  }
+}

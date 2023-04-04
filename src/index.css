@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{
+  --bg-main :#0a0a0a;
+  --txt-white:#fff;
+  --bg-card :  #C81E32ff;
+  --txt-banner:#ff445a; 
+  --bg-single :#1D1D1Dff;
+  --cc-rank:#3C4048;
+  --back-arr :aliceblue;
+  --link-color :yellow;
+  --single-return:#1d4d4d;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: var(--bg-main);
+  font-family: 'Abel', sans-serif;
+  color: var(--txt-white);
+  min-width: 350px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  
+  
+}
+
+a{
+  text-decoration: none;
+  color: var(--txt-banner);
+}
+img{
+  max-width: 100%;
+}

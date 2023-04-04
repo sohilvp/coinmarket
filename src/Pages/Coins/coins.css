@@ -1,0 +1,145 @@
+.low {
+  color: red;
+}
+.high {
+  color: green;
+}
+
+.style-container {
+  background: var(--bg-single);
+  border-radius: 15px;
+  width: fit-content;
+  padding: 1em 1em;
+}
+.back-to-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  background: var(--bg-single);
+  margin-left: 1em;
+  margin-top: 1em;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.back-to-home:hover {
+  background: var(--single-return);
+  color: var(--back-arr);
+}
+.coins-container {
+  display: flex;
+  padding-top: 1em;
+}
+
+.left-section-container {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1em;
+  padding: 2em 1em;
+  text-align: center;
+  transition: all 0.2s ease-in;
+}
+
+.left-section-container img {
+  width: 160px;
+}
+
+.right-section-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.2em;
+}
+
+.basics {
+  display: flex;
+  justify-content: left;
+  gap: 1em;
+}
+.discription-conatiner {
+  margin-right: 1em;
+}
+.discription-conatiner a {
+  color: var(--link-color);
+}
+
+.hidden-container {
+  visibility: hidden;
+}
+.center-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}
+
+.single-return {
+  background: var(--single-return);
+  padding: 0.5em;
+  border-radius: 10px;
+}
+.single-return:hover {
+  transform: scale(1.05);
+}
+.single-return > p:first-child {
+  text-align: center;
+}
+
+.return-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.return-sub {
+  display: flex;
+  gap: 1em;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1050px) {
+  .basics {
+    flex-direction: column;
+  }
+
+  .style-container {
+    width: 95%;
+  }
+
+  .center-section {
+    flex-direction: column;
+  }
+
+  .return-sub {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .style-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .coins-container {
+    flex-direction: column;
+
+  }
+  .left-section-container {
+    margin-bottom: 3em;
+    padding: 1em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .return-sub {
+    flex-direction: column;
+
+    text-align: center;
+  }
+  .back-to-home {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Allan&display=swap");
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 3em;
+  padding-top: 1em;
+  color: var(--bg-card);
+  font-family: "Allan", cursive;
+  font-size: 2rem;
+}
+
+.selection {
+  outline: none;
+  border: 2px solid var(--bg-card);
+  background: none;
+  width: 6em;
+  padding: 0.5em 0.5em;
+  color: var(--bg-card);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 800px) {
+  .nav-container {
+    padding: 0.7em 2em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-container {
+    padding: 0.7em 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-container {
+    padding: 0.7em 1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-container {
+    font-size: 1.15rem;
+  }
+  .selection {
+    font-size: 0.7rem;
+  }
+}
